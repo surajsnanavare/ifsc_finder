@@ -11,14 +11,14 @@ var ifsc = require('ifsc-finder');
 If you want to get details all details for specific IFSC code following function will be userfull.
 
 ```JS
-fc.get(IFSC_CODE).then(function(res){
+ifsc.get(IFSC_CODE).then(function(res){
     console.log(res);
 })
 ```
 Different functions are avaiable to get specific details like Bank Name, Bank Code, City, State, etc. Below is example to get Bank Name for ```IFSC_Code```.
 
 ```JS
-fc.getBankName(IFSC_CODE).then(function(res){
+ifsc.getBankName(IFSC_CODE).then(function(res){
     console.log(res);
 })
 ```
