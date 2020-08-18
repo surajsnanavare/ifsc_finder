@@ -7,6 +7,12 @@ var ifsc = require('ifsc-finder');
 ```
 
 # Documentation
+## Installation
+Use following command to install IFSC finder 
+```JS
+npm install ifsc-finder
+```
+
 ## Basic Usage
 If you want to get details all details for specific IFSC code following function will be userfull.
 
