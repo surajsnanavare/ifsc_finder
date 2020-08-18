@@ -1,6 +1,6 @@
 {
   "name": "ifsc-finder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get bank details by IFSC code.",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,10 @@
     "url": "git+https://github.com/surajsnanavare/ifsc_finder.git"
   },
   "keywords": [
-    "ifsc", "ifsc finder", "razorpay", "bank details"
+    "ifsc",
+    "ifsc finder",
+    "razorpay",
+    "bank details"
   ],
   "author": "Suraj Nanavare",
   "license": "ISC",
