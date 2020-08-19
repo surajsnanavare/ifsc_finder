@@ -53,7 +53,8 @@ ifsc.get(IFSC_code, details_list).then(function(res){
     console.log(res);
 })
 
-```Output:``` { BANK: 'Credit Suisse Bank', STATE: 'Maharastra', CONTACT: ' 022 6777 3417' } 
+// Output:
+{ BANK: 'Credit Suisse Bank', STATE: 'Maharastra', CONTACT: ' 022 6777 3417' } 
 ```
 
 If you pass single detail instead of details array then ```ifsc.get()``` will return plain string insead of object.
@@ -62,7 +63,9 @@ If you pass single detail instead of details array then ```ifsc.get()``` will re
 ifsc.get(IFSC_code, "bank").then(function(res){
     console.log(res);
 })
-```Output :``` Credt Suisse Bank
+
+// Output: 
+Credt Suisse Bank
 ```
 
 > **Currently available detail Ids** - CENTRE, IMPS, UPI, ADDRESS, STATE, DISTRICT, RTGS, MICR, NEFT, BRANCH, CITY, CONTACT, MICR, MICR CODE, BANK, BANKCODE, IFSC.
