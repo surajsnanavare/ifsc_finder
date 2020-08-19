@@ -1,6 +1,6 @@
 {
   "name": "ifsc-finder",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Get bank details by IFSC code.",
   "main": "index.js",
   "scripts": {
