@@ -56,6 +56,10 @@ ifsc.get(IFSC_code, details_list).then(function(res){
 // Output:
 { BANK: 'Credit Suisse Bank', STATE: 'Maharastra', CONTACT: ' 022 6777 3417' } 
 ```
+>  Note : Passing invalid/unsupported detail Id (e.g 'state2') in details list ```ifsc.get()``` will be returned in ``SKIPPED``. See below sample output:
+```JS
+{ BANK: 'Credit Suisse Bank', STATE: 'Maharastra', CONTACT: ' 022 6777 3417' , SKIPPED: ['state2'] }
+```
 
 If you pass single detail instead of details array then ```ifsc.get()``` will return plain string insead of object.
 
