@@ -14,22 +14,22 @@ npm install ifsc-finder
 ```
 
 ## Basic Usage
-If you want to get details all details for specific IFSC code following function will be userfull.
+If you want to get details (Bank, City, State, etc) for specific ``IFSC_code`` following function will be usefull.
 
 ```JS
-ifsc.get(IFSC_CODE).then(function(res){
+ifsc.get(IFSC_code).then(function(res){
     console.log(res);
 })
 ```
-Different functions are avaiable to get specific details like Bank Name, Bank Code, City, State, etc. Below is example to get Bank Name for ```IFSC_Code```.
+Different functions are avaiable to get only specific details like Bank Name, Bank Code, City, State, etc. Below is example to get Bank Name for ```IFSC_Code```.
 
 ```JS
-ifsc.getBankName(IFSC_CODE).then(function(res){
+ifsc.getBankName(IFSC_code).then(function(res){
     console.log(res);
 })
 ```
 
-## Functions to get specific details
+### Functions to get specific details
 - ``` getBankName(IFSC_Code)``` - Returns Bank Name for specified IFSC code
 - ``` getBranchName(IFSC_Code)``` - Returns Branch Name for specified IFSC code
 - ``` getBankCode(IFSC_Code)``` - Returns Bank Code for specified IFSC code
@@ -44,3 +44,25 @@ ifsc.getBankName(IFSC_CODE).then(function(res){
 - ``` isNeft(IFSC_Code)``` - Returns true if bank supports NEFT for specified IFSC code
 - ``` isRtgs(IFSC_Code)``` - Returns true if bank supports RTGS for specified IFSC code
 
+## Advanced Usage
+Get only required details like Bank, City, etc. in one function call. See below example:
+
+```JS
+var details_list = ['bank','state','Contact']
+ifsc.get(IFSC_code, details_list).then(function(res){
+    console.log(res);
+})
+
+```Output:``` { BANK: 'Credit Suisse Bank', STATE: 'Maharastra', CONTACT: ' 022 6777 3417' } 
+```
+
+If you pass single detail instead of details array then ```ifsc.get()``` will return plain string insead of object.
+
+```JS
+ifsc.get(IFSC_code, "bank").then(function(res){
+    console.log(res);
+})
+```Output :``` Credt Suisse Bank
+```
+
+> **Currently avaiable detail Ids** - CENTRE, IMPS, UPI, ADDRESS, STATE, DISTRICT, RTGS, MICR, NEFT, BRANCH, CITY, CONTACT, MICR, MICR CODE, BANK, BANKCODE, IFSC.
