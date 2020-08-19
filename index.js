@@ -1,7 +1,7 @@
 var utils = require('./utils');
 
 // Returns all details for specified IFSC code
-exports.get = function (code) {
+exports.get = function (code,) {
     return utils.returnData(code,null);
 }
 
@@ -27,7 +27,7 @@ exports.getMicr = function(code){
 
 // Returns District for specified IFSC code
 exports.getDistrict = function(code){
-    return utils.returnData(code,'BRANCH');
+    return utils.returnData(code,'DISTRICT');
 }
 
 // Returns City for specified IFSC code
@@ -69,4 +69,4 @@ exports.isNeft = function(code){
 // Returns true if bank supports RTGS for specified IFSC code
 exports.isRtgs = function(code){
     return utils.returnData(code,'RTGS');
-}
+} 
