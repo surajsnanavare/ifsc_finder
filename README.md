@@ -65,4 +65,4 @@ ifsc.get(IFSC_code, "bank").then(function(res){
 ```Output :``` Credt Suisse Bank
 ```
 
-> **Currently avaiable detail Ids** - CENTRE, IMPS, UPI, ADDRESS, STATE, DISTRICT, RTGS, MICR, NEFT, BRANCH, CITY, CONTACT, MICR, MICR CODE, BANK, BANKCODE, IFSC.
+> **Currently available detail Ids** - CENTRE, IMPS, UPI, ADDRESS, STATE, DISTRICT, RTGS, MICR, NEFT, BRANCH, CITY, CONTACT, MICR, MICR CODE, BANK, BANKCODE, IFSC.
