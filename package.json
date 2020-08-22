@@ -4,7 +4,7 @@
   "description": "Get bank details by IFSC code.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "dependencies": {
     "axios": "^0.19.2"
@@ -24,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/surajsnanavare/ifsc_finder/issues"
   },
-  "homepage": "https://github.com/surajsnanavare/ifsc_finder#readme"
+  "homepage": "https://github.com/surajsnanavare/ifsc_finder#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1"
+  }
 }
