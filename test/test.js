@@ -11,33 +11,30 @@ describe('Get(IFSC_CODE)', function () {
   it('Should return all IFSC details as object', async function () {
     var result = await ifsc.get(IFSC_CODE);
     assert.equal(typeof (result), 'object');
-    expect(result).to.eql({
-      'MICR CODE': '411485032',
-      CITY: 'PUNE',
+    expect(result).to.eql({ 
+      RTGS: true,
+      IMPS: true,
+      CONTACT: '99999999',
+      ADDRESS: 'SHOP NO 104 FIRST FLOOR SUNIT CAPITAL SENAPATI BAPAT ROAD OPP MEMORIAL HOSPITAL PUNE 411016',
       STATE: 'MAHARASHTRA',
-      BRANCH: 'SENAPATI BAPAT ROAD BRANCH',
       NEFT: true,
       DISTRICT: 'PUNE',
-      RTGS: true,
       MICR: '411485032',
-      'STD CODE': '999',
-      IMPS: true,
       CENTRE: 'PUNE',
-      CONTACT: '99999999',
-      ADDRESS:
-        'SHOP NO 104 FIRST FLOOR SUNIT CAPITAL SENAPATI BAPAT ROAD OPP MEMORIAL HOSPITAL PUNE 411016',
+      SWIFT: '',
       UPI: true,
+      CITY: 'PUNE',
+      BRANCH: 'SENAPATI BAPAT ROAD BRANCH',
       BANK: 'Kotak Mahindra Bank',
       BANKCODE: 'KKBK',
-      IFSC: 'KKBK0001779'
-    }
+      IFSC: 'KKBK0001779' }
     );
   });
 
   it('Should return object with 17 keys', async function () {
     var result = await ifsc.get(IFSC_CODE);
     var keysCount = utils.countObjectKeys(result);
-    assert.equal(keysCount, 17);
+    assert.equal(keysCount, 16);
   });
 });
 
