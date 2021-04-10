@@ -1,5 +1,8 @@
 # IFSC Finder
-IFSC Finder is module based on Razorpay's API to get IFSC details. It provides simple way to get detailed as well as specific information for specific IFSC code.
+IFSC Finder is module based on Razorpay's API to get IFSC details. It provides simple way to get bank detailed for specific IFSC code.
+
+![IFSC-Finder](https://user-images.githubusercontent.com/14973225/114267466-638d5a00-9a19-11eb-9541-5a406f8da97e.png)
+
 
 [![Testcases](https://github.com/surajsnanavare/ifsc_finder/actions/workflows/node.js.yml/badge.svg)](https://github.com/surajsnanavare/ifsc_finder/actions/workflows/node.js.yml) [![Package Publish](https://github.com/surajsnanavare/ifsc_finder/actions/workflows/npm-publish.yml/badge.svg?branch=master)](https://github.com/surajsnanavare/ifsc_finder/actions/workflows/npm-publish.yml)
 
