@@ -14,7 +14,7 @@ describe('Get(IFSC_CODE)', function () {
     expect(result).to.eql({ 
       RTGS: true,
       IMPS: true,
-      CONTACT: '99999999',
+      CONTACT: '+9199999999999',
       ADDRESS: 'SHOP NO 104 FIRST FLOOR SUNIT CAPITAL SENAPATI BAPAT ROAD OPP MEMORIAL HOSPITAL PUNE 411016',
       STATE: 'MAHARASHTRA',
       NEFT: true,
@@ -22,6 +22,7 @@ describe('Get(IFSC_CODE)', function () {
       MICR: '411485032',
       CENTRE: 'PUNE',
       SWIFT: '',
+      ISO3166: 'IN-MH',
       UPI: true,
       CITY: 'PUNE',
       BRANCH: 'SENAPATI BAPAT ROAD BRANCH',
@@ -34,7 +35,7 @@ describe('Get(IFSC_CODE)', function () {
   it('Should return object with 17 keys', async function () {
     var result = await ifsc.get(IFSC_CODE);
     var keysCount = utils.countObjectKeys(result);
-    assert.equal(keysCount, 16);
+    assert.equal(keysCount, 17);
   });
 });
 
@@ -120,7 +121,7 @@ describe('Get indivisual IFSC details', function () {
     var result = await ifsc.getContact(IFSC_CODE);
     var resultType = typeof(result);
     expect(result).to.be.a('string');
-    assert.equal(result,'99999999');
+    assert.equal(result,'+9199999999999');
   })
   
   it('Sould return Address as "String"', async function(){
