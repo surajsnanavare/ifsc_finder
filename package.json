@@ -7,7 +7,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "axios": "^1.6.4"
+    "axios": "^1.13.5"
   },
   "repository": {
     "type": "git",
